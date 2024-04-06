@@ -1,5 +1,5 @@
 {
-	"name": "id-gomingenerator",
+	"name": "gomin",
 	"displayName": "gomin",
 	"description": "gomin for VS Code",
 	"version": "0.0.1",
@@ -14,8 +14,12 @@
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.gomin",
-				"title": "gomin"
+				"command": "extension.gomin.start",
+				"title": "gomin start"
+			},
+			{
+				"command": "extension.gomin.test",
+				"title": "gomin test"
 			}
 		]
 	},

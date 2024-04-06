@@ -1,9 +1,11 @@
+import { Position } from "../structure/Position";
+
 export class CssRenderer {
+    private position: Position;
+    private imageURL: string;
+
     constructor() {
-        this.position = {
-            x: 0,
-            y: 0,
-        };
+        this.position = new Position(0, 0);
         this.imageURL = "";
     }
 
@@ -16,7 +18,7 @@ export class CssRenderer {
         this.setCss(css);
     }
 
-    setCss(css) {
+    setCss(css: string) {
 
     }
 
@@ -24,8 +26,8 @@ export class CssRenderer {
      * image url을 변경한다.
      * @param {String} url 
      */
-    changeImageURL(url) {
-        this.imageURL = url
+    changeImageURL(url: string) {
+        this.imageURL = url;
     }
 
     /**
@@ -33,7 +35,7 @@ export class CssRenderer {
      * @param {number} x 
      * @param {number} y 
      */
-    changePosition(x, y) {
+    changePosition(x:number, y:number) {
         this.position.x = x;
         this.position.y = y;
     }
