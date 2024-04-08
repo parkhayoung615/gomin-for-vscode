@@ -1,20 +1,21 @@
 import { Position } from "./Position";
+import { ActionType } from "./enums";
 
 export class Command {
-    private _type: string;
+    private _type: ActionType;
     private _start: Position;
     private _end: Position;
 
-    constructor(type:string, start:Position, end:Position) {
+    constructor(type:ActionType, start:Position, end:Position) {
         this._type = type; 
         this._start = start; 
         this._end = end;
     }
 
-    get type() : string {
+    get type() : ActionType {
         return this._type;
     }
-    set type(value: string) {
+    set type(value: ActionType) {
         this._type = value;
     }
 

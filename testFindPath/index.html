@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./MinHeap.js"></script>
+    <script src="./Graph.js"></script>
+    <script src="./util.js"></script>
+    <script src="./dijstra.js"></script>
+    <script src="./script.js"></script>
+
+    <style>
+        #map {
+            width: 700px;
+            height: 700px;
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: repeat(15, 1fr);
+            position: relative;
+        }
+        #map>div {
+            border: 1px solid black;
+        }
+        #u {
+            position: absolute;
+            left: 690px;
+            top: 690px;
+            width: 15px;
+            height: 15px;
+            background-color: green;
+            transition: 0.5s linear;
+        }
+    </style>
+</head>
+<body>
+    <div id="map">
+        <div id="u"></div>
+    </div>
+</body>
+</html>
